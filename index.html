@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Music Application">
+    <meta name="author" content="Carles Ollé & Pol Samarra">
+
+    <title>MusicBox</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="lib/css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="lib/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Botó menú quan es visualitza en un mòbil -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- Link a dalt de tot del logo -->
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i><span class="light">MusicBox</span>
+                </a>
+                <!-- Input de cerca i botó -->
+                <div class="input-group">
+                    <input type="text" class="form-control" id="query" placeholder="Search">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-default" onclick="MusicRecommender.search()">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#results">Resultados búsqueda</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#related">Artistas relacionados</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#popular">Canciones populares</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#playList">Lista de reproduccion</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">MusicBox</h1>
+                        <p class="intro-text">A music application to make people happy. Try it!<br>Created by Carles Ollé & Pol Samarra.</p>
+                        <a href="#playList" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Resultados búsqueda  -->
+    <section id="results" class="container content-section text-center">
+        <h2><font color="white">Resultados búsqueda</font></h2>
+        <div id="container-resultats" class="container"></div>
+    </section>
+
+    <!-- Artistas relacionados -->
+    <section id="related" class="container content-section text-center">
+        <h2><font color="white">Artistas relacionados</font></h2>
+        <div id="container-similar-artists" class="container"></div>
+    </section>
+
+    <!-- Canciones populares -->
+    <section id="popular" class="content-section text-center">
+        <h2><font color="white">Canciones populares</font></h2>
+        <div id="container-popular" class="container"></div>
+    </section>
+
+    <!-- Lista de reproduccion -->
+    <section id="playList" class="container content-section text-center" style="margin-bottom: 5%">
+        <h2><font color="white">Lista de reproducción</font></h2>
+        <div id="container-llista" class="container"></div>
+    </section>
+
+    <!-- Caratula de la cancion que está sonando -->
+    <div id="fixed-cover" class="navbar-fixed-bottom"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; MusicBox 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="lib/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="lib/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="lib/js/jquery.easing.min.js"></script>
+
+    <!-- APP Management -->
+    <script src="js/musicBox.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="lib/js/grayscale.js"></script>
+
+
+</body>
+
+</html>
