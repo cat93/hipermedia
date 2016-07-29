@@ -1,0 +1,22 @@
+L'aplicació consta de cinc seccions amb les que interactuar:
+
+- A la part superior de la pàgina, sempre visible, hi tenim un cercador. En aquest cercador hi podem buscar cançons pel nom, podem buscar les cançons de l'àlbum que vulguem, o podem introduir el nom d'un artista per a veure un grup de cançons seves.
+Per a fer una cerca, introduïm el nom al quadre de text i premem el botó de buscar situat a la dreta del quadre. Cal tenir en compte que prement la tecla enter no inicia la cerca, tot i que si estas a l'input de text, el següent focus és el botó de cerca, i aleshores si que buscaria amb la tecla enter.
+
+- El primer cop que s'inicia l'aplicació, clickant a "Canciones Populares", anirem a una secció que ens recomenarà les cançons més populars de l'actualitat, cadascuna amb el nom de la cançó, l'artista i un detall de l'àlbum. Sota cada cançó observem un reproductor, que podrem prémer en qualsevol moment per a reproduir la cançó que desitjem. El botó "play" inicia la reproducció, el "pause" l'atura (podem prémer el play posteriorment per tal de seguir la cançó en el punt on s'ha quedat) o podem aturar la cançó completament prement la tecla "d'stop". Automàticament, quan estem reproduïnt una cançó i premem el play d'una altra, l'anterior atura la seva reproducció i comença a sonar la nova cançó sel·leccionada.
+Al costat del botó de pausa trobem un botó per afagir la cançó sel·leccionada a la llista de reproducció, per a poder escoltar les teves cançons preferides.
+En aquesta mateixa secció, un cop s'hagin escoltat diverses cançons, s'hi trobaran recomanacions d'artistes similars als més escoltats per a l'usuari en comptes de les més populars de l'aplicació.
+
+- Per a buscar una cançó pel nom, les cançons d'un album o d'un artista cal introduir el nom desitjat a la caixa de text situada a la capçalera fixa.
+Un cop clickada l'icona de cerca, a l'apartat "Resultados Búsqueda" hi apareixerà un llistat amb les 20 cançons que es corresponen amb la cerca triada.
+Aquesta secció disposa del mateix reproductor que l'apartat "Canciones Populares", amb les mateixes funcionalitats.
+
+- Addicionalment, en cada cerca, a la secció "Artistas Relacionados", hi apareixerà un llistat amb artistes similars al contingut buscat. Cada artista disposa del nom i una imatge. Aquest llistat només és informatiu.
+
+- Per últim, a les seccions "Resultados Búsqueda" i "Canciones Populares", podrem afegir mitjançant l'icona '+' una cançó desitjada a la "Lista de Reproducción". Aquesta disposa del mateix format que la resta de llistats reproduïbles, afegint que per cada cançó que s'acaba, es reprodueix automàticament la següent, de forma cíclica quan s'arriba al final del llistat.
+
+- A la part superior de la pàgina hi trobem un botó en forma de fletxa que ens condueix al final de la pàgina.
+Tanmateix, a la capçalera fixa podem retornar a la part superior de la pàgina en qualsevol moment clickant el nom de l'aplicació. 
+
+
+

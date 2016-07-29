@@ -177,16 +177,6 @@
 	        xhr.send();
 
 	        return xhr.responseText;
-	    },
-	    request2: function (url, successCallback) {
-	        var xhttp = new XMLHttpRequest();
-	        xhttp.onreadystatechange = function() {
-	            if (xhttp.readyState == xhttp.DONE && xhttp.status == 200) {
-	              successCallback(xhttp.responseText);
-	            }
-	        };
-	        xhttp.open("GET", url, true);
-	        xhttp.send();
 	    }
 	}
 
